@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hideki Ariyama - Workspace</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An attractive home page for any browser">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icon.png"><!--here you can change the windows icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="bg-color-for-grid">
+
+            <section class="container-workspace">
+                <h1>Welcome Back!</h1><!--start message-->
+                <h2>Workspace</h2>
+                <h2 id="date"></h2>
+
+                <form form class="google-search-engine" action="https://www.google.com/search" method="GET"
+                    onsubmit="return validateForm();" autocomplete="off">
+                    <input class="search-box" type="text" name="q" placeholder="Search" oninput="handleInput(this)"
+                        onblur="handleBlur(this)">
+                </form>
+
+                <ul> <!--here you can change the links and name-->
+                    <li>Productivity</li>
+                    <li><a href="https://www.linkedin.com/learning/"> In Learning</a></li>
+                    <li><a href="https://www.notion.so/">Notion</a></li>
+                    <li><a href="https://www.coursera.org/">Coursera</a></li>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://www.aluracursos.com/">Alura</a></li>
+                    <li><a href="https://home.edx.org/">edX</a></li>
+                </ul>
+
+                <div class="social"> <!--here you can put your social networks 'maximum 6' -->
+                    <a href="https://www.linkedin.com/"><img src="img/linkedin.png"></a>
+                    <a href="https://mail.google.com/"><img src="img/gmail.png"></a>
+                    <a href="home.html"><img src="img/icon.png"></a>
+                    <a href="database.html"><img src="img/database.png"></a>
+                    <a href="https://github.com/"><img src="img/github.png"></a>
+                </div>
+
+            </section>
+        </div>
+        <div class="image-workspace"> <!--the first image of the page-->
+            <img id="img-n1" src="https://i.pinimg.com/736x/1a/8c/f9/1a8cf9d1632559cab09930667666da41.jpg"
+                alt="Anime Image">
+        </div>
+    </main>
+    <footer>
+        <script type="text/javascript" src="script.js"></script>
+    </footer>
+</body>
+
+</html>

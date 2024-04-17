@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hideki Ariyama - Home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="An attractive home page for any browser">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icon.png"><!--here you can change the windows icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="image-home"> <!--the first image of the page-->
+            <img id="img-n1" src="https://i.pinimg.com/564x/40/91/a5/4091a53116a73caf6a83b9ea01eb5b73.jpg"
+                alt="Anime Image">
+        </div>
+        <!--<div id="videoContainer">
+            <audio id="audio" src=""></audio>
+            <video id="video-n1" loop muted autoplay src="https://i.pinimg.com/564x/80/25/9d/80259dce1ffd2fcf24dedae5c4270e4e.jpg" type="video/mp4"></video>
+        </div>-->
+
+        <div id="bg-color-for-grid">
+            <section class="container-home">
+                <h1>Welcome Back!</h1><!--start message-->
+                <h2>Home</h2>
+                <h2 id="date"></h2>
+
+                <form form class="google-search-engine" action="https://www.google.com/search" method="GET"
+                    onsubmit="return validateForm();" autocomplete="off">
+                    <input class="search-box" type="text" name="q" placeholder="Search" oninput="handleInput(this)"
+                        onblur="handleBlur(this)">
+                </form>
+
+                <ul> <!--here you can change the links and name-->
+                    <li>General</li>
+                    <li><a href="https://www.notion.so/">Notion</a></li>
+                    <li><a href="https://visortmo.com/">Tmo</a></li>
+                    <li><a href="https://www.crunchyroll.com/">Crunchyroll</a></li>
+                    <li><a href="https://mail.google.com/">Gmail</a></li>
+                    <li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
+                    <li><a href="https://www.pinterest.es/">Pinterest</a></li>
+                    <li><a href="https://monkeytype.com/">MonkeyType</a></Li>
+                </ul>
+
+                <div class="social"> <!--here you can put your social networks 'maximum 6' -->
+                    <a href="https://www.linkedin.com/"><img src="img/linkedin.png"></a>
+                    <a href="workspace.html"><img src="img/icon.png"></a>
+                    <a href="https://github.com/"><img src="img/github.png"></a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <script type="text/javascript" src="script.js"></script>
+    </footer>
+</body>
+
+</html>
